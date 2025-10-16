@@ -16,9 +16,9 @@ export default function CrewSlider() {
             <AnimatePresence mode="wait">
                 <motion.img 
                     key={selectedCrew.name}
-                    src={selectedCrew.images.png} 
+                    src={selectedCrew.images.webp} 
                     alt={`${selectedCrew.name}`} 
-                    className="w-[50%] h-[50%] object-cover mx-auto mt-12"
+                    className="w-[60%] h-[60%] object-cover mx-auto mt-12"
                     initial={{ opacity: 0, x: 50 }}
                     animate={{ opacity: 1, x: 0 }}
                     exit={{ opacity: 0, x: -50 }}

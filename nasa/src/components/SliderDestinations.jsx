@@ -15,7 +15,7 @@ export default function SliderDestinations() {
         <div>
           {/* Imagen animada */}
           <motion.img
-            src={selectedDestination.images.png}
+            src={selectedDestination.images.webp}
             alt={selectedDestination.name}
             className="w-[200px] h-[200px] object-cover rounded-full mx-auto mt-12"
             animate={{ rotate: 360 }}
