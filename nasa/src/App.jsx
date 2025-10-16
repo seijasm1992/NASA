@@ -3,6 +3,7 @@ import Header from "./components/Header"
 import Hero from "./components/Hero"
 import Destination from "./Pages/Destination"
 import Crew from "./Pages/Crew"
+import Technology from "./Pages/Technology"
 import { Routes, Route } from "react-router-dom"
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Hero />} />
         <Route path="/destinations" element={<Destination />} />
         <Route path="/crew" element={<Crew />} />
+        <Route path="/technology" element={<Technology />} />
       </Routes>
     </div>
   )

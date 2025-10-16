@@ -7,7 +7,7 @@ export const DataProvider = ({ children }) => {
     const [isOpen, setIsOpen] = useState(false)
     const [destination, setDestination] = useState(0)
     const [crew, setCrew] = useState(0)
-
+const [tech, setTech] = useState(0)
 
     const handleLinkClick = () => {
         setIsOpen(false);
@@ -23,7 +23,7 @@ export const DataProvider = ({ children }) => {
 
 
     return (
-        <DataContext.Provider value={{ data, setData, isOpen, setIsOpen, handleLinkClick, destination, setDestination, crew, setCrew }}>
+        <DataContext.Provider value={{ data, setData, isOpen, setIsOpen, handleLinkClick, destination, setDestination, crew, setCrew, tech, setTech }}>
             {children}
         </DataContext.Provider>
     )
